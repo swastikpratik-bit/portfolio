@@ -1,7 +1,7 @@
-import About from "@/components/About";
 import LandingPage from "@/components/LandingPage";
 import { Projects } from "@/components/projects";
 import { LampDemo } from "@/components/ui/Lamp";
+import About from "@/pages/About";
 
 export default function Home() {
 
@@ -10,15 +10,15 @@ export default function Home() {
 
       {/* <!-- Welcome Section --> */}
       <div className="">
-      <LampDemo/>
+        <LampDemo/>
       </div>
 
       {/* <!-- Hero Section --> */}
       <LandingPage />
-      
 
+      
       {/* <!-- About Section --> */}
-      <About />
+      <About/>
 
 
       {/* <!-- Projects Section --> */}

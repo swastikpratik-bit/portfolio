@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/libs/utils";
+import Image from "next/image";
 
 export function LampDemo() {
   return (
@@ -16,7 +17,17 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Hello There ! <br /> the right way
+   
+           Hello There ! <br /> Scroll To Explore
+          <div className="text-white flex items-center justify-center pt-10 font-bold">
+          <Image
+            src={"/icons/down.gif"} 
+            alt={"down-arrow"}
+            width={70}
+            height={70}
+          />
+          </div>
+ 
       </motion.h1>
 
     </LampContainer>
