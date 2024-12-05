@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Swastik Pratik - Portfolio",
-  description: "A portfolio showcasing Swastik Pratik, a Front-End Software Engineer based in Jhansi, India.",
+  description: "A portfolio showcasing Swastik Pratik, a Software Engineer based in Jhansi, India.",
 };
 
 export default function RootLayout({

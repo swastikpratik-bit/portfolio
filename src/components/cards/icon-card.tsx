@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import CardWrapper from "./card-wrapper";
@@ -7,7 +8,7 @@ const IconCard = ({ title, link }: { title: string, link: string }) => {
 
   const icons = {
     "Linkedin": {
-      src: resolvedTheme === "dark" ? "/social-icons/linkedin.svg" : "/social-icons/linkedin-dark.svg",
+      src: "/social-icons/linkedin.svg",
       classNames: "aspect-square",
     },
     "Github": {
@@ -24,6 +25,8 @@ const IconCard = ({ title, link }: { title: string, link: string }) => {
     },
   };
 
+  console.log(title);
+
   return (
     <CardWrapper>
       <div className="flex items-center justify-center w-full h-full opacity-80 hover:opacity-100 transition-opacity relative z-10">
@@ -33,11 +36,12 @@ const IconCard = ({ title, link }: { title: string, link: string }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className={`relative h-full w-auto ${icons[title as keyof typeof icons]?.classNames}`}>
+          <div className={`relative p-2 lg:p-8 ${icons[title as keyof typeof icons]?.classNames}`}>
             <Image
               src={icons[title as keyof typeof icons]?.src}
               alt={title}
-              fill
+              width={50}
+              height={50}
             />
           </div>
         </a>

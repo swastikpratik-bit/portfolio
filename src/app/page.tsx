@@ -1,7 +1,9 @@
 import LandingPage from "@/components/LandingPage";
+import BlurFade from "@/components/magic-ui/blur-fade";
 import { Projects } from "@/components/projects";
 import { LampDemo } from "@/components/ui/Lamp";
 import About from "@/pages/About";
+
 
 export default function Home() {
 
@@ -14,7 +16,12 @@ export default function Home() {
       </div>
 
       {/* <!-- Hero Section --> */}
-      <LandingPage />
+      <div>
+        <BlurFade delay={0.1} className='max-w-[90rem] pl-4 my-10 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-cyan-500 font-sans '>
+          Home
+        </BlurFade>
+        <LandingPage />
+      </div>
 
       
       {/* <!-- About Section --> */}
@@ -24,22 +31,13 @@ export default function Home() {
       {/* <!-- Projects Section --> */}
       <Projects/>
      
+
       {/* <!-- Contact Section --> */}
-      <section className="py-16 px-6 bg-slate-800 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
-        <form className="max-w-md mx-auto">
-          <input type="text" placeholder="Name" className="w-full mb-4 px-4 py-2 border rounded" />
-          <input type="email" placeholder="Email" className="w-full mb-4 px-4 py-2 border rounded" />
-          <textarea placeholder="Message" className="w-full mb-4 px-4 py-2 border rounded"></textarea>
-          <button type="submit" className="w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-            Send
-          </button>
-        </form>
-      </section>
+      
 
       {/* <!-- Footer --> */}
       <footer className="py-6 bg-gray-900 text-center text-white">
-        <p>&copy; 2024 Swastik Pratik. All rights reserved.</p>
+        <p> Thanks for scrolling through! </p>
       </footer>
     </div>
   );
