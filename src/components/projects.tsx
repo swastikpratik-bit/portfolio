@@ -9,9 +9,9 @@ export function Projects() {
 
   return (
     <div className="w-full h-full py-20 ">
-      <h2 className="max-w-[90rem] pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-cyan-500 font-sans ">
+      <h1 className="text-5xl lg:text-7xl text-center font-aboutFont md:text-5xl font-bold text-cyan-500 ">
         Projects
-      </h2>
+      </h1>
       <Carousel items={cards} />
     </div>
   );

@@ -17,7 +17,7 @@ const LandingPage = () => {
         </div>
         <div className="flex mx-10 flex-col gap-4 w-[90%] mt-6 lg:mt-0 lg:w-[10%]">
           <BlurFade delay={0.26} className=''>
-            <IconCard title="Linkedin" link="https://www.linkedin.com/in/swatikpratiksingh/" />
+            <IconCard title="Linkedin" link="https://www.linkedin.com/in/swastikpratiksingh" />
           </BlurFade>
           <BlurFade delay={0.26} className=''>
           <IconCard title="Github" link="https://github.com/swastikpratik-bit" />
@@ -27,7 +27,9 @@ const LandingPage = () => {
 					</BlurFade>
         </div>  
       
-      <CodeDisplay />  
+        <BlurFade delay={0.30}>
+          <CodeDisplay />
+        </BlurFade>
     </div>
   )
 }

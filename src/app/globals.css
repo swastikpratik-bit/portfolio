@@ -21,6 +21,11 @@
   }
 }
 
+@font-face {
+  font-family: 'about-font';
+  src: url('../../public/PPPangaia-Bold.otf');
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

@@ -1,8 +1,9 @@
 const CodeDisplay = () => {
     return (
-      <section className='code-section'>
+      <section className='code-section '>
+        <div className="p-2 m-2 lg:p-6 lg:m-6 lg:text-2xl">
         <pre>
-          1&nbsp;&nbsp;const <b>Person</b> = () =&gt; &#123;
+          1&nbsp;&nbsp;&nbsp;&nbsp;const <b>Person</b> = (&nbsp;) =&gt; &nbsp;&#123;
         </pre>
         <pre>
           2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const [ &nbsp;name, setName &nbsp;] = useState(&apos;&apos;);
@@ -25,15 +26,16 @@ const CodeDisplay = () => {
         <pre>
           7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setRole(&nbsp;&quot;<b>Software Engineer</b>&quot;&nbsp;);
         </pre>
-        {/* <pre>
-          8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setInterest(&quot;<b>Devops, , Crypto, F1</b>&quot;);
-        </pre> */}
+        <pre>
+          8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setInterest(&quot;<b>Development, Crypto</b>&quot;);
+        </pre>
         <pre>
           9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;, []);
         </pre>
         <pre>
-          10 &#125;
+          10 &nbsp; &#125;
         </pre>
+        </div>
       </section>
     )
   }
